@@ -1,18 +1,16 @@
 // import logo from "../Vector.png";
-function Main(){
+function Main(props){
     return (
-        <div className="main">
-        <h1 className="title">Fun Facts About React</h1>
-        {/* <img className="half-logo" src={logo} /> */}
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100k stars on Github</li>
-            <li>is maintained by Facebook</li>
-            <li>Power Thousands of enterprices apps,including mobile apps</li>
-
-        </ul>
-        </div>
+        <main className={props.darkMode ? "dark" : ""}>
+            <h1 className="main--title">Fun facts about React</h1>
+            <ul className="main--facts">
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on GitHub</li>
+                <li>Is maintained by Facebook</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+            </ul>
+        </main>
     )
 }
 
